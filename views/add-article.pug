@@ -1,0 +1,22 @@
+extends add-layout
+
+block content
+    div.container
+        div.row
+            div.col-lg-8.pt-3
+                if errors
+                    for error in errors
+                        div.alert.alert-warning(role='alert')= error.msg
+
+                h1.pt-0-mt-0=title
+
+                form(method='POST' action='')
+                    div.input-group.my-3
+                        div.input-group-prepend
+                            span.input-group-text Link
+                        input#url.form-control(type='text' placeholder='Artikel' name='url' aria-label="Username" aria-describedby="basic-addon1" required)
+                        
+                    button.btn.btn.primary(type='submit') Abschicken
+
+                
+                            

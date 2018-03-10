@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.text-grey {
+    color: #333;
+}
+.fullscreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.image-frame {
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.logo-container .logo-icon-container p {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-color: rgba(196, 5, 38, 1);
+    line-height: 56px;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    font-size: 52px;
+    color: #fff;
+}
+.logo-text-container {
+    margin-left: 60px;
+}
+.logo-text-container p {
+    line-height: 100%;
+    color: #333;
+    font-size: 6pt;
+    text-transform: uppercase;
+}
+.logo-text-container p:first-child {
+    font-size: 14pt;
+}
+.main_color_scheme_4 {
+    color: #C0B283;
+    background-color: #C0B283;
+    border-color: #C0B283;
+}
+.main_color_scheme_1 {
+    color: #EC576B;
+    background-color: #EC576B;
+    border-color: #EC576B;
+}
+.main_color_scheme_2 {
+    color: #4EC5C1;
+    background-color: #4EC5C1;
+    border-color: #4EC5C1;
+}
+.main_color_scheme_3 {
+    color: #E5E338;
+    background-color: #E5E338;
+    border-color: #E5E338;
+}

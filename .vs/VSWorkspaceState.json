@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controllers",
+    "\\models",
+    "\\public",
+    "\\public\\javascripts",
+    "\\public\\stylesheets",
+    "\\routes",
+    "\\views"
+  ],
+  "SelectedNode": "\\public\\javascripts\\focus-slider.js",
+  "PreviewInSolutionExplorer": false
+}

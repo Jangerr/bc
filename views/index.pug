@@ -1,0 +1,227 @@
+extends layout
+
+block slider
+
+    // Begin of FS
+    .container-fluid.px-0
+        // Focus Slider
+        .fs-main-container.m-0(data-fs-main-container='')
+            .preloading-images
+                // Preloader Image hidden
+                img.focus-slider-preloader-image(alt='preloader Image', data-fs-image-preload='', src='')
+            // Focus Slider Content-Frame
+            .fullscreen.fs-content-frame(data-fs-mainframe='')
+                // Frames
+                .fullscreen.image-background.colorfull-bg(data-fs-frame='1', data-autoresize='', style='')
+                    .fs-black-overlay.fullscreen
+                .fullscreen.image-background.colorfull-bg(data-fs-frame='2', data-autoresize='', style='z-index: 3; top: -100%;')
+                    .fs-black-overlay.fullscreen
+                // mobile Navigation
+                ol.fs-mobile-indicators
+                // Navigation
+                .fs_navi_main_container
+                    // Scolling Button
+                    .fs_navi_scroll_button
+                        span
+                            i.ion.ion-chevron-up
+                    // Navigation Content Frame
+                    .fs_navi_main_item_frame
+                        // Frame zum Bewegen
+                        .fs_navi_main_item_mover
+                            // Navigation Item
+                            .fs_navi_main_item.fs_navi_main_item_active
+                                // Item Wrapper
+                                .fs_navi_main_item_wrapper
+                                    // Laschenhalter
+                                    .fs_navi_main_item_laschen_wrapper
+                                        .fs_navi_main_item_lasche.main_color_scheme_2
+                                    // Content
+                                    .fs_navi_main_item_content
+                                        .fs_navi_main_item_content_image
+                                            // Mouseover Overlay
+                                            .fs_navi_hover_overlay
+                                                .fs_navi_hover_overlay_item_container
+                                                    span(style='')
+                                                        i.ion.ion-bookmark
+                                                .fs_navi_hover_overlay_item_container
+                                                    span(style='')
+                                                        i.ion.ion-share
+                                            // Actual Content
+                                            .fs_navi_desc_text
+                                                p.p-0.m-0.fs_navi_tags.main-color-tags #Steuer
+                                                p.p-0.m-0.fs_navi_desc Deutschland wird die Nutzung von Bitcoin als Zahlungsmittel nicht besteuern,...
+                                                p.fs_navi_hl.m-0.p-0 cryptoplanet
+                    // Scolling Button
+                    .fs_navi_scroll_button.fs_navi_scroll_button_active
+                        span.mx-auto
+                            i.ion.ion-chevron-down.mx-auto
+                // Description Box
+                .description-box(data-fs-autocenter='')
+                    .position-relative
+                        .position-relative(data-fs-prime-animation='')
+                            p.fs-prime-source.p-0.m-0(data-fs-prime-text='') Source
+                    .position-relative
+                        .position-relative(data-fs-prime-animation='')
+                            p.fs-prime-title(data-fs-prime-text='') Titel
+                    .position-relative
+                        .position-relative(data-fs-prime-animation='')
+                            p.fs-prime-description(data-fs-prime-text='') Beschreibung
+                    .position-relative
+                        .position-relative(data-fs-prime-animation='')
+                            a#read-more-id
+                                p.read-more(data-fs-prime-text='') Read More
+                // Slider
+                .fs_progress_slider
+
+  
+block news
+    // News
+    .container-fluid.p-0(style="background-color: #fefefe")
+        .container-fluid.pt-3.pb-3.px-5(style="background-color: #eee; border-top: 1px solid #F9F9FB")
+            
+            .d-flex.justify-content-center
+                p.m-0 Filtere News
+            hr.mt-2.pb-2
+            .d-flex.justify-content-center
+                .mx-5(style="text-align:center; cursor: pointer")
+                    i.fas.fa-link(style='font-size:24px;')
+                    p.m-0 Quelle
+                .mx-5(style="text-align:center; cursor: pointer")
+                    i.fas.fa-list-ul(style='font-size:24px;')
+                    p.m-0 Kategorie 
+                .mx-5(style="text-align:center; cursor: pointer")
+                    i.fab.fa-bitcoin(style='font-size:24px;')
+                    p.m-0 Coin
+                .mx-5(style="text-align:center; cursor: pointer")
+                    i.far.fa-calendar-alt(style='font-size:24px;')
+                    p.m-0 Datum
+                .mx-5(style="text-align:center; cursor: pointer")
+                    i.fas.fa-filter(style='font-size:24px;')
+                    p.m-0 Custom
+                .mx-5(style="text-align:center; cursor: pointer")
+                    i.fas.fa-search(style='font-size:24px;')
+                    p.m-0 Suchen
+        .container-fluid.p-5.d-flex.justify-content-between(style="background-color: #79589f; background-image: linear-gradient(135deg, rgba(0, 161, 224, 0.3), transparent);")
+            div
+                h4.m-0(style='color:#fefefe; font-family: "Montserrat";') Immer auf dem neuesten Stand
+                p.m-0(style='color:#fefefe') Abboniere hier den t&auml;glichen Newsletter
+            .d-flex.align-items-center
+                button.btn.btn-primary Anmelden
+        
+        .container.pt-3
+            .row
+                .col-lg-12.main_color_scheme_1.p-0.pb-2.m-0.my-3(style='background-color: transparent; border-bottom-width: 5px; border-bottom-style: solid;')
+                    h1.p-0.m-0(style='color: #333; font-family: Roboto, sans-serif; font-weight: 700;') Markt
+                    p.p-0.m-0(style='color: #333; font-size: 12px;') Alle Markt-Nachrichten anzeigen
+            .row
+                // Category Item
+                .col-lg-8.px-3.py-2.category-items
+                    // Image
+                    a(href='news/?id=840')
+                        .image-frame.position-relative.mb-3(style='height: 300px; background-image: url(https://assets.bwbx.io/s3/javelin/public/javelin/images/social-tech-7d25a852b6.jpg);')
+                    // Source
+                    p.text-item-source.p-0.m-0.mb-2 Bloomberg
+                    // Headline
+                    a(href='news/?id=840')
+                        p.p-0.m-0.mb-2.text-item-headline Websites That Pay Users With Blockchain Aim to Disrupt Facebook
+                    // Description
+                    a(href='news/?id=840')
+                        p.p-0.m-0.mb-2.text-item-description
+                            | David Kadavy used to post on Facebook without expecting to get paid. Then blockchain came along.
+                    // Media Interaction Icons
+                    button.btn.btn-link.pl-0.pr-1
+                        i.ion.ion-bookmark.media-interaction-btn
+                    button.btn.btn-link.px-1
+                        i.ion.ion-share.media-interaction-btn
+                .col-lg-4.px-3.py-2.category-items
+                    // Image
+                    a(href='news/?id=840')
+                        .image-frame.position-relative.mb-3(style='height: 150px; background-image: url(https://coinlive.de/wp-content/uploads/2018/02/39.png);')
+                    // Source
+                    p.text-item-source.p-0.m-0.mb-2 coinlive
+                    // Headline
+                    a(href='news/?id=840')
+                        p.p-0.m-0.mb-2.text-item-headline Bitcoin Transaktionskosten erreichen Tiefstand
+                    // Description
+                    a(href='news/?id=840')
+                        p.p-0.m-0.mb-2.text-item-description
+                            | Trotz der hohen Transaktionskosten gehören Bitcoin-Transaktionen zur Normalität in der Krypto-Community, derzeit allerdings lohnen sich diese erst recht. Die Gebühren sind auf dem niedrigsten Stand seit 18 Monaten, mit einem Durchschnittspreis pro Transaktion von unter einem Dollar. Im Vergleich, im letzten Quartal des vergangenen Jahres lag der Höchstpreis pro Transaktion bei $ 34.
+                    // Media Interaction Icons
+                    button.btn.btn-link.pl-0.pr-1
+                        i.ion.ion-bookmark.media-interaction-btn
+                    button.btn.btn-link.px-1
+                        i.ion.ion-share.media-interaction-btn
+            .row
+                .col-lg-4.px-3.py-2.category-items
+                    // Image
+                    a(href='news/?id=840')
+                        .image-frame.position-relative.mb-3(style='height: 150px; background-image: url(https://coinlive.de/wp-content/uploads/2018/02/39.png);')
+                    // Source
+                    p.text-item-source.p-0.m-0.mb-2 coinlive
+                    // Headline
+                    a(href='news/?id=840')
+                        p.p-0.m-0.mb-2.text-item-headline Bitcoin Transaktionskosten erreichen Tiefstand
+                    // Description
+                    a(href='news/?id=840')
+                        p.p-0.m-0.mb-2.text-item-description
+                            | Trotz der hohen Transaktionskosten gehören Bitcoin-Transaktionen zur Normalität in der Krypto-Community, derzeit allerdings lohnen sich diese erst recht. Die Gebühren sind auf dem niedrigsten Stand seit 18 Monaten, mit einem Durchschnittspreis pro Transaktion von unter einem Dollar. Im Vergleich, im letzten Quartal des vergangenen Jahres lag der Höchstpreis pro Transaktion bei $ 34.
+                    // Media Interaction Icons
+                    button.btn.btn-link.pl-0.pr-1
+                        i.ion.ion-bookmark.media-interaction-btn
+                    button.btn.btn-link.px-1
+                        i.ion.ion-share.media-interaction-btn
+                .col-lg-4.px-3.py-2.category-items
+                    // Image
+                    a(href='news/?id=840')
+                        .image-frame.position-relative.mb-3(style='height: 150px; background-image: url(https://coinlive.de/wp-content/uploads/2018/02/39.png);')
+                    // Source
+                    p.text-item-source.p-0.m-0.mb-2 coinlive
+                    // Headline
+                    a(href='news/?id=840')
+                        p.p-0.m-0.mb-2.text-item-headline Bitcoin Transaktionskosten erreichen Tiefstand
+                    // Description
+                    a(href='news/?id=840')
+                        p.p-0.m-0.mb-2.text-item-description
+                            | Trotz der hohen Transaktionskosten gehören Bitcoin-Transaktionen zur Normalität in der Krypto-Community, derzeit allerdings lohnen sich diese erst recht. Die Gebühren sind auf dem niedrigsten Stand seit 18 Monaten, mit einem Durchschnittspreis pro Transaktion von unter einem Dollar. Im Vergleich, im letzten Quartal des vergangenen Jahres lag der Höchstpreis pro Transaktion bei $ 34.
+                    // Media Interaction Icons
+                    button.btn.btn-link.pl-0.pr-1
+                        i.ion.ion-bookmark.media-interaction-btn
+                    button.btn.btn-link.px-1
+                        i.ion.ion-share.media-interaction-btn
+                .col-lg-4.px-3.py-2.category-items
+                    p Weitere Markt-Nachrichten
+                    .clearfix.my-3
+                        .float-left.pr-2(style='display: flex; align-items: center; width: 35%;')
+                            .image-frame(style='background-color: red; height: 65px; flex: 1; width: 100%; background-size: auto 100%; background-image: url(https://assets.bwbx.io/s3/javelin/public/javelin/images/social-tech-7d25a852b6.jpg);')
+                        .float-right(style='display: flex; align-items: center; width: 65%;')
+                            div(style='flex: 1;')
+                                p.p-0.m-0(style='line-height: 100%; margin-bottom: 3px!important; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; word-wrap: break-word;') Bloomberg
+                                p.p-0.m-0(style="font-family: 'Roboto Slab', serif; line-height: 120%; font-size: 14px;") Bitcoin Transaktionskosten erreichen Tiefstand
+                    .clearfix.my-3
+                        .float-left.pr-2(style='display: flex; align-items: center; width: 35%;')
+                            .image-frame(style='background-color: red; height: 65px; flex: 1; width: 100%; background-size: auto 100%; background-image: url(https://assets.bwbx.io/s3/javelin/public/javelin/images/social-tech-7d25a852b6.jpg);')
+                        .float-right(style='display: flex; align-items: center; width: 65%;')
+                            div(style='flex: 1;')
+                                p.p-0.m-0(style='line-height: 100%; margin-bottom: 3px!important; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; word-wrap: break-word;') Bloomberg
+                                p.p-0.m-0(style="font-family: 'Roboto Slab', serif; line-height: 120%; font-size: 14px;") Bitcoin Transaktionskosten erreichen Tiefstand
+                    .clearfix.my-3
+                        .float-left.pr-2(style='display: flex; align-items: center; width: 35%;')
+                            .image-frame(style='background-color: red; height: 65px; flex: 1; width: 100%; background-size: auto 100%; background-image: url(https://assets.bwbx.io/s3/javelin/public/javelin/images/social-tech-7d25a852b6.jpg);')
+                        .float-right(style='display: flex; align-items: center; width: 65%;')
+                            div(style='flex: 1;')
+                                p.p-0.m-0(style='line-height: 100%; margin-bottom: 3px!important; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; word-wrap: break-word;') Bloomberg
+                                p.p-0.m-0(style="font-family: 'Roboto Slab', serif; line-height: 120%; font-size: 14px;") Bitcoin Transaktionskosten erreichen Tiefstand
+                    .clearfix.my-3
+                        .float-left.pr-2(style='display: flex; align-items: center; width: 35%;')
+                            .image-frame(style='background-color: red; height: 65px; flex: 1; width: 100%; background-size: auto 100%; background-image: url(https://assets.bwbx.io/s3/javelin/public/javelin/images/social-tech-7d25a852b6.jpg);')
+                        .float-right(style='display: flex; align-items: center; width: 65%;')
+                            div(style='flex: 1;')
+                                p.p-0.m-0(style='line-height: 100%; margin-bottom: 3px!important; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; word-wrap: break-word;') Bloomberg
+                                p.p-0.m-0(style="font-family: 'Roboto Slab', serif; line-height: 120%; font-size: 14px;") Bitcoin Transaktionskosten erreichen Tiefstand
+                    .clearfix.my-3
+                        .float-left.pr-2(style='display: flex; align-items: center; width: 35%;')
+                            .image-frame(style='background-color: red; height: 65px; flex: 1; width: 100%; background-size: auto 100%; background-image: url(https://assets.bwbx.io/s3/javelin/public/javelin/images/social-tech-7d25a852b6.jpg);')
+                        .float-right(style='display: flex; align-items: center; width: 65%;')
+                            div(style='flex: 1;')
+                                p.p-0.m-0(style='line-height: 100%; margin-bottom: 3px!important; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; word-wrap: break-word;') Bloomberg
+                                p.p-0.m-0(style="font-family: 'Roboto Slab', serif; line-height: 120%; font-size: 14px;") Bitcoin Transaktionskosten erreichen Tiefstand

@@ -1,0 +1,197 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.main_navi_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    //overflow: hidden;
+    z-index: 100000;
+    position: relative;
+    background-color: #fff;
+    //box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16), 0px 0px 0px 1px rgba(0,0,0,0.08);
+}
+
+.main_navi_elem {
+    float: left;
+}
+
+li .navi_elem {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.2s all;
+}
+
+.main_navi_inner_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main_navi_inner_list_item {
+    float: left;
+}
+.main_navi_inner_list_item_elem {
+    display: block;
+    text-decoration: none;
+    transition: 0.2s all;
+    text-align: left;
+}
+.admin_mainframe {
+    position: relative;
+    width: 100%;
+    outline: 1px solid black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.admin_input {
+    margin: 5px 0;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    font-size: 10pt;
+    font-style: italic;
+    color: #666;
+    width: 100%;
+    min-width: 500px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.news-item-preview {
+    position: relative;
+    width: 100%;
+    border: 1px solid red;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 15px;
+}
+.input-invisible {
+    outline: 0!important;
+    border: 0!important;
+    width: 100%!important;
+    margin: 15px 0;  
+    transition: 0.25s all;
+    display: block;
+    font-size: 12pt;
+    background: 0!important;;
+    background-color: transparent;
+    -webkit-appearance: none!important;
+    border-radius: 0;
+    border: 0!important;;
+}
+.edit-button-image {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.55);
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+.edit-button-image span {
+    line-height: 27px;
+    width: 31px;
+    color: #f4f4f4;
+}
+.input-overlay {
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    margin: 0;
+    color: #f4f4f4;
+    left: 0;
+    background-color: rgba(127,127,127,0.45);
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: none;
+}
+.active .input-overlay {
+    display: block;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.logo_icon {
+    border-radius: 3px;
+    background-color: rgba(196, 5, 38, 1);
+    color: white;
+    height: 52px;
+    width: 52px;
+    display: block;
+    margin-right: 10px;
+}
+    .logo_icon p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+        line-height: 52px;
+        font-weight: 700;
+        font-family: "Black Ops One",cursive;
+        display: block;
+    }

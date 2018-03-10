@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.category-items {
+    color: #333;
+}
+.category-items a {
+    color: #333;
+}
+.text-item-source {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 8pt;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+.text-item-headline {
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14pt;
+}
+.text-item-description {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 11pt;
+}
+.media-interaction-btn {
+    color: #333;
+    font-size: 20px;
+}
+button:hover .media-interaction-btn {
+    color: #666;
+}
+.btn-custom {
+    font-size: 13px;
+    padding: 6px 12px;
+    background-color: olive;
+    border: 0;
+    background: #50C9C3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #7474BF; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.user-btn {
+    height: 30px;
+    width:40px;
+    position:relative;
+    text-align:center;
+    margin-top:5px;
+}
+.navi-item-fp {
+    padding-left: 15px!important;
+}

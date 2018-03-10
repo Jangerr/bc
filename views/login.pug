@@ -1,0 +1,33 @@
+extend layout-login
+
+block content
+    .fullscreen.image-frame
+        .login-container.rounded
+            .logo-container
+                p.m-0(style="font-family: 'Great Vibes', cursive;") B
+                p.m-0 braincuz
+            form(method='post' action='/login')
+                .modal-header
+                    h5.mb-0(style='color: #333;') Anmelden
+                .modal-body
+                    p.text-grey.mb-2 Bitte geben Sie Ihre Email-Adresse und Ihr Passwort an.
+                    .input-group.mb-3
+                        .input-group-prepend
+                            span#basic-addon1.input-group-text
+                                i.ion.ion-ios-email(style='font-size: 24px')
+                        input.form-control.rounded-right(type='text', name='email', placeholder='Emai-Adresse', aria-label='Email', aria-describedby='basic-addon1' required)
+                    .input-group
+                        .input-group-prepend
+                            span#basic-addon1.input-group-text
+                                i.ion.ion-unlocked(style='font-size: 20px')
+                        input.form-control.rounded-right(type='password', name='password', placeholder='Password', aria-label='Password', aria-describedby='basic-addon2' required)
+                    button.btn.btn-link.p-0.mt-1.mb-2 Passwort vergessen
+
+                    p.mb-0 Mit einem Konto profitieren Sie von zahlreichen Vorteilen. Sollten Sie noch kein Konto besitzen, k&ouml;nnen Sie unter Angabe einer Email-Adresse im n&auml;chsten Schritt ein Konto erstellen.
+                .modal-footer
+                    input.btn.btn-primary(type='submit' value='Anmelden')
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
